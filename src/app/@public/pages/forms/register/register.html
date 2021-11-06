@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" type="text/css" href="forms.scss" />
+</head>
+<body>
+  <br />
+  <div class="container">
+    <div class="row">
+      <div class="col-lg"></div>
+      <div class="col-lg-6">
+        <form>
+          <h1>Registro de usuario</h1>
+          <p>
+            Rellena los datos del formulario para efectuar el registro de tu
+            cuenta de usuario.
+          </p>
+          <hr />
+          <label for="name"><b>Nombre</b></label>
+          <input type="text" placeholder="Enter name" name="name" required />
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required />
+
+          <label for="psw"><b>Password</b></label>
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="psw"
+            required
+          />
+
+          <p>
+            By creating an account you agree to our
+            <a href="#" style="color: dodgerblue;">Terms & Privacy</a>.
+          </p>
+          <p>
+            ¿Ya tiene una cuenta?
+            <a [routerLink]="['/login']" style="color: dodgerblue;"
+              >Iniciar sesión</a
+            >.
+          </p>
+          <div class="row">
+            <div class="col-lg">
+              <button type="submit" class="signup-btn">Registrarse</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="col-lg"></div>
+    </div>
+  </div>
+</body>
