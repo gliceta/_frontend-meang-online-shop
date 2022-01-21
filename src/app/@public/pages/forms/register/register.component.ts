@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { EMAIL_PATTERN } from '@core/constants/regex';
 import { IRegisterForm, IResultRegister } from '@core/interfaces/register.interface';
 import { UsersService } from '@core/services/users.service';
 import { basicAlert } from '@shared/alerts/toasts';
@@ -11,6 +12,7 @@ import { TYPE_ALERT } from '@shared/alerts/values.config';
   styleUrls: ['./register.component.scss']
 })
 export class RegisterComponent implements OnInit {
+  emailPattern = EMAIL_PATTERN;
   register: IRegisterForm = {
     name: '',
     lastname: '',

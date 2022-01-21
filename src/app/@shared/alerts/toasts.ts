@@ -9,10 +9,10 @@ export function basicAlert(icon = TYPE_ALERT.SUCCESS, title: string = '') {
     showConfirmButton: false,
     toast: true,
     timer: 5000,
-    timerProgressBar: true,
+    timerProgressBar: true/*,
     didOpen: (toast) => {
       toast.addEventListener('mouseenter', Swal.stopTimer);
       toast.addEventListener('mouseleave', Swal.resumeTimer);
-    }
+    }*/
   });
 }
